@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The Future - Motivational Products</title>
+        <title>The Future - Product Landing Page</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header id="header">
+            <div class="container">
+                <img id="header-img" src="logo.jpg" alt="The Future Logo">
+                <h1>The Future</h1>
+                <nav id="nav-bar">
+                    <a class="nav-link" href="#about">About</a>
+                    <a class="nav-link" href="#features">Features</a>
+                    <a class="nav-link" href="#products">Products</a>
+                    <a class="nav-link" href="#recommendation">Recommendations</a>
+                    <a class="nav-link" href="#contact">Contact</a>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <!-- Hero Section -->
+            <section id="hero">
+                <h1>Welcome to The Future</h1>
+                <p>Transformative literature, uplifting and inspiational productivity to lead you to the better you.</p>
+                <h1>Empower Your Life with <span>The Future</span></h1>
+                <p>Your source for motivational books, bibles, uplifting songs, and inspiring movies to transform your future.</p>
+                <h1>Unlock Your Potential with *The Future*</h1>
+                <p>Your one-stop shop for empowering reads, soul-stiring melodies, and cinematic masterpices that inspire change to shape a brighter tomorrow.</p>
+                <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
+                    <input id="email" type="email" placeholder="Enter your email" name="email" required>
+                    <input id="submit" type="submit" value="Get Started">
+                </form>
+            </section>
+
+            <!-- About Section -->
+            <section id="about">
+                <h2>About Us</h2>
+                <p><span>The Future</span> is dedicated to creating a brighter tomorrow by offering products that inspire, encourage, and uplift.</p>
+                <p>We are dedicated to transforming lives through carefully curated products that motivate, stimulate, and empower.</p>
+                <p>Explore our range of motivational books, uplifting songs, and life-changing movies today.</p>
+            </section>
+
+            <!-- Features Section -->
+            <section id="features" class="section">
+                <h2>Features</h2>
+                <div class="features-container">
+                    <div class="feature">
+                        <img src="quality_control.jpg" alt="Quality Content">
+                        <h3>Quality Content</h3>
+                        <p>Curated books and multimedia designed to inspire and motivate.</p>
+                    </div>
+                    <div class="feature">
+                        <img src="global_delivery.jpg" alt="Global Delivery">
+                        <h3>Global Delivery</h3>
+                        <p>Fast and reliable shipping anywhere in the world.</p>
+                    </div>
+                    <div class="feature">
+                        <img src="affordable_pricing.jpg" alt="Affordable Pricing">
+                        <h3>Affordable Pricing</h3>
+                        <p>We offer competitive pricing to ensure accessibility for all.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Products Section -->
+            <section id="products">
+                <h2>Our Products</h2>
+                <div class="product-grid">
+                    <div class="product">
+                        <h3>Motivational Books</h3>
+                        <p>Discover life-changing stories and strategies.</p>
+                        <button>Learn More</button>
+                    </div>
+                    <div class="product">
+                        <h3>Inspirational Songs</h3>
+                        <p>Music that elevates your spirit and mindset.</p>
+                        <button>Learn More</button>
+                    </div>
+                    <div class="product">
+                        <h3>Motivational Movies</h3>
+                        <p>Visual storytelling to ignite your passion.</p>
+                        <button>Learn More</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Products Section -->
+            <section id="products" class="section">
+                <h2>For You</h2>
+                <div class="product-grid">
+                    <div class="product">
+                        <h3>Books</h3>
+                        <p>Life-changing reads to inspire success.</p>
+                        <p>$20</p>
+                        <button>Explore</button>
+                    </div>
+                    <div class="product">
+                        <h3>Bibles</h3>
+                        <p>Mind opening words that propel spirituality.</p>
+                        <p>$25</p>
+                        <button>Explore</button>
+                    </div>
+                    <div class="product">
+                        <h3>Songs</h3>
+                        <p>Music to uplift your spirit.</p>
+                        <p>$15</p>
+                        <button>Explore</button>
+                    </div>
+                    <div class="product">
+                        <h3>Movies</h3>
+                        <p>Stories that ignite passion.</p>
+                        <p>$30</p>
+                        <button>Explore</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Video Section -->
+            <section id="video-section">
+                <h2>Watch Our Featured Video (Our Story)</h2>
+                <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/78nsxRxbf4w?si=Xuw1iqGkcG-jyyGp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </section>
+
+            <!-- Most Purchased Section -->
+            <section id="most-purchased">
+                <h2>Most Purchased Products</h2>
+                <ul>
+                    <h3><li>"The Power of Now" - Motivational Book</li></h3>
+                    <h3><li>"Rise Up" - Inspirational Song</li></h3>
+                    <h3><li>"The Pursuit of Happiness" - Motivational Movie</li></h3>
+                </ul>
+            </section>
+
+            <!-- Recommendation Section -->
+            <section id="recommendation">
+                <h2>Get a Product Recommendation</h2>
+                <form id="recommendation-form">
+                    <label for="interests">What inspires you the most?</label>
+                    <select id="interests" name="interests">
+                        <option value="books">Books</option>
+                        <option value="songs">Songs</option>
+                        <option value="movies">Movies</option>
+                    </select>
+                    <input type="submit" value="Recommend">
+                </form>
+                <p id="recommendation-result"></p>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact">
+                <h2>Contact Us</h2>
+                <p>Email: contact@thefuture.com</p>
+                <p>Phone: +123 456 789</p><br>
+                <h2>Get In Touch</h2>
+                <p>Have questions? Email us at <a href="mailto:info@thefuture.com">info@thefuture.com</a>.</p>
+                <p>Reach out to us.</p>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 The Future. All Rights Reserved.</p>
+        </footer>
+    </body>
+</html>
