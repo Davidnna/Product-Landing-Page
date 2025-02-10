@@ -28,29 +28,28 @@ body, html {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
-  gap: 10px;
 }
 
 .company_name {
-  display: flex;;
+  display: flex;
   align-items: center;
-  gap: 10px;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
 #header-img {
-  width: 10vw;
-  padding-right: 5px;
-  margin-bottom: 15px;
+  width: 8vw;
+  border-radius: 10%;
 }
 
 #header .container h1 {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 .nav-link {
   color: #fff;
   text-decoration: none;
-  padding: 9px 15px;
+  padding: 9px 13px;
   border-radius: 5px;
   font-weight: bold;
 }
@@ -64,7 +63,7 @@ body, html {
   text-align: center;
   background: #004080;
   color: #fff;
-  padding: 30vh 0 5vh;
+  padding: 15vw 0 5vh;
 }
 
 #hero h1 {
@@ -103,14 +102,14 @@ body, html {
 }
 
 /* About Section */
-#about, #features, #products, #video-section, #most-purchased, #recommendation, #contact {
-  padding: 60px 20px;
+#about, #features, #product, #products, #video-section, #most-purchased, #recommendation, #contact {
   text-align: center;
+  scroll-margin-top: 10vw;
 }
 
-#about h2, #features h2, #products h2, #video-section h2, #most-purchased h2, #recommendation h2, #contact h2 {
+#about h2, #features h2, #product h2, #products h2, #video-section h2, #most-purchased h2, #recommendation h2, #contact h2 {
   margin-bottom: 20px;
-  padding-top: 20vh;
+  padding-top: 3vw;
   color: #003366;
 }
 
@@ -185,6 +184,8 @@ ul {
 #recommendation h2 {
   color: #2760a0;
   margin-bottom: 20px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 #recommendation form {
@@ -226,13 +227,83 @@ footer {
 }
 
 /* Media Queries */
+@media (max-width: 874px) {
+	#hero {
+		padding-top: 30vw;
+	}
+
+	#about, #features, #product, #products, #video-section, #most-purchased, #recommendation, #contact {
+		padding: 0vw 20px;
+		scroll-margin-top: 20vw;
+	}
+}
+
 @media (max-width: 768px) {
+	#hero {
+		padding-top: 40vw;
+	}
+	
+	#about, #features, #product, #products, #video-section, #most-purchased, #recommendation, #contact {
+		scroll-margin-top: 30vw;
+	}
 
-    #hero {
-        padding-top: 50vh;
-    }
+	#header-img {
+	  width: 20vw;
+	}
 
-    #about h2, #features h2, #products h2, #video-section h2, #most-purchased h2, #recommendation h2, #contact h2 {
-        padding-top: 35vh;
-    }
+	#header .container h1 {
+	  font-size: 1.4rem;
+	}
+}
+
+@media (max-width: 458px) {
+	#hero {
+		padding-top: 70vw;
+	}
+	
+	#about, #features, #product, #products, #video-section, #most-purchased, #recommendation, #contact {
+		scroll-margin-top: 46vw;
+	}
+}
+
+@media (max-width: 373px) {
+	#about, #features, #product, #products, #video-section, #most-purchased, #recommendation, #contact {
+		scroll-margin-top: 52vw;
+	}
+}
+
+@media (max-width: 328px) {
+	#about, #features, #product, #products, #video-section, #most-purchased, #recommendation, #contact {
+		scroll-margin-top: 57vw;
+	}
+}
+
+@media (max-width: 300px) {
+	#about, #features, #product, #products, #video-section, #most-purchased, #recommendation, #contact {
+		scroll-margin-top: 61vw;
+	}
+}
+
+@media (max-width: 266px) {
+	#header .container {
+		padding: 0 10px 0;
+	}
+
+	.company_name {
+		padding: 0 4px 0 0;
+	}
+
+	.nav-link {
+		display: block;
+		padding: 0;
+		font-size: smaller;
+	}
+
+	#hero {
+		padding-top: 80vw;
+	}
+
+	#about, #features, #product, #products, #video-section, #most-purchased, #recommendation, #contact {
+		scroll-margin-top: 65vw;
+	}
 }
