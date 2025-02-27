@@ -3,36 +3,59 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" type="image/jpg" href="logo.jpg">
-        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" type="image/jpg" href="images/logo.jpg">
+        <!-- <link rel="icon" type="image/jpg" href="https://i.postimg.cc/76GzVcwG/logo.jpg"> -->
+        <link rel="stylesheet" href="styles/styles.css">
         <title>The Future - Motivational Products</title>
     </head>
     <body>
+        <!-- Header -->
         <header id="header">
             <div class="container">
+                <!-- Company Name -->
                 <div class="company_name">
-                    <img id="header-img" src="logo.jpg" alt="The Future Logo">
+                    <figure>
+                        <img id="header-img" src="images/logo.jpg" alt="The Future Logo">
+                        <!-- <img id="header-img" src="https://i.postimg.cc/76GzVcwG/logo.jpg" alt="The Future Logo"> -->
+                    </figure>
                     <h1>The Future</h1>
                 </div>
+                <!-- Navbar -->
                 <nav id="nav-bar">
-                    <a class="nav-link" href="#about">About</a>
-                    <a class="nav-link" href="#features">Features</a>
-                    <a class="nav-link" href="#products">Products</a>
-                    <a class="nav-link" href="#recommendation">Recommendations</a>
-                    <a class="nav-link" href="#contact">Contact</a>
+                    <a class="nav-link" onclick="close()" href="#about">About</a>
+                    <a class="nav-link" onclick="close()" href="#features">Features</a>
+                    <a class="nav-link" onclick="close()" href="#products">Products</a>
+                    <a class="nav-link" onclick="close()" href="#recommendation">Recommendations</a>
+                    <a class="nav-link" onclick="close()" href="#contact">Contact</a>
                 </nav>
+                <!-- Menu Icon -->
+                <div id="nav">
+                    <div id="menu-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
             </div>
         </header>
 
+        <!-- Main -->
         <main>
             <!-- Hero Section -->
             <section id="hero">
-                <h1>Welcome to The Future</h1>
-                <p>Transformational literature, uplifting and exhilarating productivity to lead you to the better you.</p>
-                <h1>Empower Your Life with <span>The Future</span></h1>
-                <p>Your source for motivational books, bibles, uplifting songs, and inspiring movies to transform your future.</p>
-                <h1>Unlock Your Potential with *The Future*</h1>
-                <p>Your one-stop shop for empowering reads, soul-stirring melodies, and cinematic masterpieces that inspire change to shape a brighter tomorrow.</p>
+                <article>
+                    <h1>Welcome to The Future</h1>
+                    <p>Transformational literature, uplifting and exhilarating productivity to lead you to the better you.</p>
+                </article>
+                <article>
+                    <h1>Empower Your Life with <span>The Future</span></h1>
+                    <p>Your source for motivational books, bibles, uplifting songs, and inspiring movies to transform your future.</p>
+                </article>
+                <article>
+                    <h1>Unlock Your Potential with *The Future*</h1>
+                    <p>Your one-stop shop for empowering reads, soul-stirring melodies, and cinematic masterpieces that inspire change to shape a brighter tomorrow.</p>
+                </article>
+                <!-- Subscribe -->
                 <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
                     <input id="email" type="email" placeholder="Enter your email" name="email" required>
                     <input id="submit" type="submit" value="Get Started">
@@ -41,28 +64,43 @@
 
             <!-- About Section -->
             <section id="about">
-                <h2>About Us</h2>
-                <p><span>The Future</span> is dedicated to creating a brighter tomorrow by offering products that inspire, encourage, and uplift.</p>
-                <p>We are dedicated to transforming lives through carefully curated products that motivate, stimulate, and empower.</p>
-                <p>Explore our range of motivational books, uplifting songs, and life-changing movies today.</p>
+                <article>
+                    <h2>About Us</h2>
+                    <p><b>The Future</b> is dedicated to creating a brighter tomorrow by offering products that inspire, encourage, and uplift.</p>
+                    <p>We are dedicated to transforming lives through carefully curated products that motivate, stimulate, and empower.</p>
+                    <p>Explore our range of motivational books, uplifting songs, and life-changing movies today.</p>
+                </article>
             </section>
 
             <!-- Features Section -->
             <section id="features" class="section">
                 <h2>Features</h2>
+                <!-- Features -->
                 <div class="features-container">
+                    <!-- Quality -->
                     <div class="feature">
-                        <img src="quality_control.jpg" alt="Quality Content">
+                        <figure>
+                            <img src="images/quality_control.jpg" alt="Quality Content">
+                            <!-- <img src="https://i.postimg.cc/HWXd595S/quality-control.jpg" alt="Quality Content"> -->
+                        </figure>
                         <h3>Quality Content</h3>
                         <p>Curated books and multimedia designed to inspire and motivate.</p>
                     </div>
+                    <!-- Delivery -->
                     <div class="feature">
-                        <img src="global_delivery.jpg" alt="Global Delivery">
+                        <figure>
+                            <img src="images/global_delivery.jpg" alt="Global Delivery">
+                            <!-- <img src="https://i.postimg.cc/HnwmgTdG/global-delivery.jpg" alt="Global Delivery"> -->
+                        </figure>
                         <h3>Global Delivery</h3>
                         <p>Fast and reliable shipping anywhere in the world.</p>
                     </div>
+                    <!-- Cost -->
                     <div class="feature">
-                        <img src="affordable_pricing.jpg" alt="Affordable Pricing">
+                        <figure>
+                            <img src="images/affordable_pricing.jpg" alt="Affordable Pricing">
+                            <!-- <img src="https://i.postimg.cc/PJsH9CGz/affordable-pricing.jpg" alt="Affordable Pricing"> -->
+                        </figure>
                         <h3>Affordable Pricing</h3>
                         <p>We offer competitive pricing to ensure accessibility for all.</p>
                     </div>
@@ -72,17 +110,21 @@
             <!-- Products Section -->
             <section id="products">
                 <h2>Our Products</h2>
+                <!-- Products -->
                 <div class="product-grid">
+                    <!-- Books -->
                     <div class="product">
                         <h3>Motivational Books</h3>
                         <p>Discover life-changing stories and strategies.</p>
                         <button type="button">Learn More</button>
                     </div>
+                    <!-- Songs -->
                     <div class="product">
                         <h3>Inspirational Songs</h3>
                         <p>Music that elevates your spirit and mindset.</p>
                         <button type="button">Learn More</button>
                     </div>
+                    <!-- Movies -->
                     <div class="product">
                         <h3>Motivational Movies</h3>
                         <p>Visual storytelling to ignite your passion.</p>
@@ -91,28 +133,33 @@
                 </div>
             </section>
 
-            <!-- Products Section -->
-            <section id="product" class="section">
+            <!-- For You Section -->
+            <section id="product">
                 <h2>For You</h2>
+                <!-- Prices -->
                 <div class="product-grid">
+                    <!-- Books -->
                     <div class="product">
                         <h3>Books</h3>
                         <p>Life-changing reads to inspire success.</p>
                         <p>$20</p>
                         <button type="button">Explore</button>
                     </div>
+                    <!-- Bibles -->
                     <div class="product">
                         <h3>Bibles</h3>
                         <p>Mind opening words that propel spirituality.</p>
                         <p>$25</p>
                         <button type="button">Explore</button>
                     </div>
+                    <!-- Songs -->
                     <div class="product">
                         <h3>Songs</h3>
                         <p>Music to uplift your spirit.</p>
                         <p>$15</p>
                         <button type="button">Explore</button>
                     </div>
+                    <!-- Movies -->
                     <div class="product">
                         <h3>Movies</h3>
                         <p>Stories that ignite passion.</p>
@@ -141,6 +188,7 @@
             <!-- Recommendation Section -->
             <section id="recommendation">
                 <h2>Get a Product Recommendation</h2>
+                <!-- Recommendation -->
                 <form id="recommendation-form">
                     <label for="interests">What inspires you the most?</label>
                     <select id="interests" name="interests">
@@ -150,22 +198,23 @@
                     </select>
                     <input type="submit" value="Recommend">
                 </form>
-                <p id="recommendation-result"></p>
             </section>
 
             <!-- Contact Section -->
             <section id="contact">
                 <h2>Contact Us</h2>
-                <p>Email: contact@thefuture.com</p>
-                <p>Phone: +123 456 789</p><br>
+                <p>Email: <a href="mailto:contact@thefuture.com">contact@thefuture.com</a></p>
+                <p>Phone: +<a href="tel:+123 456 789">123 456 789</a></p>
                 <h2>Get In Touch</h2>
                 <p>Have questions? Email us at <a href="mailto:info@thefuture.com">info@thefuture.com</a>.</p>
                 <p>Reach out to us.</p>
             </section>
         </main>
 
+        <!-- Footer -->
         <footer>
             <p>&copy; 2024 The Future. All Rights Reserved.</p>
         </footer>
+        <script src="scripts/script.js"></script>
     </body>
 </html>
